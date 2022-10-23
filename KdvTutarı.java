@@ -1,22 +1,22 @@
 import java.util.Scanner;
-public class KdvTutarý {
+public class KdvTutarÄ± {
 public static void main (String []args) {
 	double tutar, oran_1 = 0.18 ;
     double oran_2 = 0.08, kdvliFiyat;  
     Scanner keyboard = new Scanner(System.in);  
-    System.out.print("Lütfen tutarý giriniz:");
+    System.out.print("LÃ¼tfen tutarÄ± giriniz:");
     tutar = keyboard.nextDouble();
 
      kdvliFiyat = tutar < 1000 ? (tutar * oran_1 + tutar) : (tutar * oran_2 + tutar);
 
-    System.out.println("Tutarý giriniz: " + tutar);
-    System.out.println("1000 TL'ye kadar olan KDV Tutarý: " + oran_1 * tutar);
-    System.out.println("1000 TL'ye kadar olan KDV Oraný: " + oran_1);
-    System.out.println("1000 TL ve sonrasý için KDV Tutarý: " +  tutar * oran_2);
-    System.out.println("1000 TL ve sonrasý için KDV Oraný: " + oran_2);
+    System.out.println("TutarÄ± giriniz: " + tutar);
+   // System.out.println("1000 TL'ye kadar olan KDV TutarÄ±: " + oran_1 * tutar);
+    System.out.println("1000 TL'ye kadar olan KDV OranÄ±: " + oran_1);
+    //System.out.println("1000 TL ve sonrasÄ± iÃ§in KDV TutarÄ±: " +  tutar * oran_2);
+    System.out.println("1000 TL ve sonrasÄ± iÃ§in KDV OranÄ±: " + oran_2);
 
 
-    System.out.println("Girilen tutar için KDV'li fiyat: " + kdvliFiyat);
+    System.out.println("Girilen tutar iÃ§in KDV'li fiyat: " + kdvliFiyat);
 
 
 	
