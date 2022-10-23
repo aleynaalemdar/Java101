@@ -1,84 +1,95 @@
 import java.util.Scanner;
-public class KullanıcıGirişi {
+public class KullanÄ±cÄ±GiriÅŸi {
 
 	public static void main(String[] args) {
 		
      Scanner keyboard = new Scanner(System.in);
      
-     System.out.println("Kullanıcı adınız : ");
+     System.out.println("KullanÄ±cÄ± adÄ±nÄ±z : ");
      String userName =keyboard.nextLine();
-     System.out.println("Şifreniz : ");
+     System.out.println("Åifreniz : ");
      String password=keyboard.nextLine();
    
    if (password.equals("12345")&&(!userName.equals("Aleynaalemdar"))){
-     System.out.println("Kullanıcı adınız yanlış");
-     System.out.println("Kullanıcı adınızı sıfırlamak ister misiniz?; "
-     		+ "evet için 1,hayır için 2 giriniz. ");
+     System.out.println("KullanÄ±cÄ± adÄ±nÄ±z yanlÄ±ÅŸ");
+     System.out.println("KullanÄ±cÄ± adÄ±nÄ±zÄ± sÄ±fÄ±rlamak ister misiniz?; "
+     		+ "evet iÃ§in 1,hayÄ±r iÃ§in 2 giriniz. ");
              int a = keyboard.nextInt();
              
              
      if (a==1) {
-     System.out.println("Yeni kullanıcı adı giriniz.");
+     System.out.println("Yeni kullanÄ±cÄ± adÄ± giriniz.");
      keyboard.nextLine();
      String newUserName =keyboard.nextLine();
      
      if (newUserName.equals("Aleynaalemdar")) {
-    	 System.out.println("Yeni kullanıcı adınız eskisiyle aynı olamaz."
-    	 		+ "Lütfen başka bir kullanıcı adı giriniz.");}
+    	 System.out.println("Yeni kullanÄ±cÄ± adÄ±nÄ±z eskisiyle aynÄ± olamaz."
+    	 		+ "LÃ¼tfen baÅŸka bir kullanÄ±cÄ± adÄ± giriniz.");}
     	 else 
-    		 System.out.println("Kullanıcı adı oluşturuldu."); }
+    		 System.out.println("KullanÄ±cÄ± adÄ± oluÅŸturuldu."); }
     	  
      if (a==2) {
-    	 System.out.println("Sistemden çıkış yapılıyor...");}
+    	 System.out.println("Sistemden Ã§Ä±kÄ±ÅŸ yapÄ±lÄ±yor...");}
      
     if (!(a==2) && !(a==1)) {
      
-     System.out.println("Yanlış giriş yaptınız,tekrar deneyiniz.");
+     System.out.println("YanlÄ±ÅŸ giriÅŸ yaptÄ±nÄ±z,tekrar deneyiniz.");
      }
      
   }		
    
    if (!(password.equals("12345"))&&(userName.equals("Aleynaalemdar"))){
-	     System.out.println("Şifreniz yanlış");
-	     System.out.println("Şifrenizi sıfırlamak ister misiniz?; "
-	     		+ "evet için 1,hayır için 2 giriniz. ");
+	     System.out.println("Åifreniz yanlÄ±ÅŸ");
+	     System.out.println("Åifrenizi sÄ±fÄ±rlamak ister misiniz?; "
+	     		+ "evet iÃ§in 1,hayÄ±r iÃ§in 2 giriniz. ");
 	             int a = keyboard.nextInt();
 	             
 	             
 	     if (a==1) {
-	     System.out.println("Yeni bir şifre giriniz.");
+	     System.out.println("Yeni bir ÅŸifre giriniz.");
 	     keyboard.nextLine();
 	     String newPassword =keyboard.nextLine();
 	     
 	     if (newPassword.equals("Aleynaalemdar")) {
-	    	 System.out.println("Yeni şifreniz eskisiyle aynı olamaz."
-	    	 		+ "Lütfen başka bir şifre giriniz.");}
+	    	 System.out.println("Yeni ÅŸifreniz eskisiyle aynÄ± olamaz."
+	    	 		+ "LÃ¼tfen baÅŸka bir ÅŸifre giriniz.");}
 	    	 else 
-	    		 System.out.println("Şifre oluşturuldu."); }
+	    		 System.out.println("Åifre oluÅŸturuldu."); }
 	    	  
 	     if (a==2) {
-	    	 System.out.println("Sistemden çıkış yapılıyor...");}
+	    	 System.out.println("Sistemden Ã§Ä±kÄ±ÅŸ yapÄ±lÄ±yor...");}
 	     
 	    if (!(a==2) && !(a==1)) {
 	     
-	     System.out.println("Yanlış giriş yaptınız,tekrar deneyiniz.");
+	     System.out.println("YanlÄ±ÅŸ giriÅŸ yaptÄ±nÄ±z,tekrar deneyiniz.");
 	     }
 	     
 	  }		
    
    if (!((password.equals("12345"))||(userName.equals("Aleynaalemdar")))){
-   System.out.println("Şifreniz ve kullanıcı adınız yanlış...");
-  } 
+   System.out.println("Åifreniz ve kullanÄ±cÄ± adÄ±nÄ±z yanlÄ±ÅŸ...");
+   System.out.println("DeÄŸiÅŸtirmek ister misiniz?");
+   System.out.println("Evet iÃ§in 1 , hayÄ±r iÃ§in 2 giriniz...");
+   int b =keyboard.nextInt();
+   if (b==1) {
+	   System.out.println("Yeni ÅŸifrenizi giriniz.");
+	   String yenisifre=keyboard.nextLine();
+	   keyboard.nextLine();
+	   System.out.println("Yeni kullanÄ±cÄ± adÄ±nÄ±zÄ± giriniz.");
+	   String yenikullaniciadi=keyboard.nextLine();
+	   	System.out.println("Åifreniz ve kullanÄ±cÄ± adÄ±nÄ±z deÄŸiÅŸtirildi.");
+   }
+	     if (b==2) {
+	    	 System.out.println("Sistemden Ã§Ä±kÄ±ÅŸ yapÄ±lÄ±yor...");}
+	     
+	    if (!(b==2) && !(b==1)) {
+	     
+	     System.out.println("YanlÄ±ÅŸ giriÅŸ yaptÄ±nÄ±z,tekrar deneyiniz.");
+	     }
+   }
    
+
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
+   }
 }
-}
+
